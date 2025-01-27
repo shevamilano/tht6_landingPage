@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hero {
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-content {
+    padding-right: 50px;
+}
+
+.hero-logo {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 350px;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.orange-glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 126, 0, 0.2);
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: 0;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
